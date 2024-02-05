@@ -1,0 +1,167 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Figtree', sans-serif;
+    background-color: #7B241C;
+}
+
+
+.textarea {
+    
+    width: 900px;
+    height: 275px;
+    float: right;
+    margin: 0px 25px;
+    background-color: #7B241C;
+    color: azure;
+    font-size: 25px;
+    outline: none;
+    border-style: none;
+}
+
+.textarea::placeholder {
+    color: rgb(185, 180, 180);
+}
+
+.selects {
+    display: block;
+    margin: 60px 55px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+.select {
+    margin: 10px 10px 10px -20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.select:hover {
+    background: blue;
+    transition: 0.4s;
+}
+
+
+.realizar {
+    display: block;
+    width: 210px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.reBt {
+    width: 210px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+    border-style: none;
+    cursor: pointer;
+}
+
+.reBt:hover {
+    background-color: blue;
+    transition: 0.4s;
+}
+
+.resultContent {
+    margin: 40px 30px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textarea2 {
+    font-size: 20px;
+    float: right;
+    width: 700px;
+    height: 120px;
+    margin: 0px 30px;
+    border-radius: 15px;
+    background-color: black;
+    border-style: none;
+    outline: none;
+    color: white;
+    user-select: none;
+    pointer-events: none;
+}
+
+.copiarContent {
+    margin: 80px 45px 0px 0px;
+    float: right;
+    width: 210px;
+    height: 50px;
+}
+
+.CopiarBt {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.CopiarBt:hover {
+    background-color: rgb(13, 155, 13);
+    transition: 0.4s;
+}
+
+footer {
+    background-color: #7B241C;
+    height: 100%;
+    margin: 0px;
+    font-size: 17px;
+}
+
+footer h4, a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
+@media (max-width: 400px) {
+    .textarea, .selects, .realizar, .resultContent, .copiarContent {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .textarea {
+        height: 150px;
+    }
+
+    .select {
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .reBt, .CopiarBt {
+        height: 30px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="textarea">
+        <textarea placeholder="¡Escribe aquí!" class="textarea" id="inputText" rows="15" cols="80"></textarea>
+    </div>
+
+    <div class="selects">
+        <label for="option">Opción:</label>
+        <select class="select" id="option">
+        <option class="encriptar" value="encriptarTexto">Encriptar</option>
+        <option class="Desencriptar" value="desencriptarTexto">Desencriptar</option>
+        </select>
+    </div>
+
+    <div class="realizar">
+        <button class="reBt" onclick="Operar()">Convertir</button>
+    </div>
+
+    <div class="resultContent">
+        <label class="textResult" for="salidaTexto">Resultado:</label>
+        <textarea class="textarea2" id="salidaTexto" rows="4" cols="50"></textarea>
+    </div>
+    
+    <div class="copiarContent">
+        <button class="CopiarBt" onclick="CopiarTexto()">Copiar al Portapapeles</button>
+    </div>
+    <footer>
+        <h4>© 2024 - <a href="https://github.com/IvyedSG">Sagod</a></h4>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
